@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "dom.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Breaks up walls of text into readable paragraphs, applies a different font and colouring.",
+   "homepage_url": "http://theplaywrite.com",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuVawc/ylWys6s6ujNY+LrVmfGEjEsUuINpo8oDu6j4cOQ7iByDOrUE/WLqdU5FxtBS+03C9OV2iTF1acEc7Fs3MGJsiQM4MmSjXnjWhYC3P6klghyiFsXPKhcibC5RU56/HEMOtaOooEokY+/ZGwSoNJX9P778WLBJWCRSNPu6RkKOuOnh0DTP76q7II/UXoTEDKQAGCQ11G6q15vKlYh+FsYZX9KEq4Xu+UgIwJuwDh7LiFSvVtRba6wV2DNmqzvEGyyQpHnwZHsR112D245t5c+MISyIftddRm3Plhu8FRxwqulhB2HkUQGT1Mxh6UJVMQoi2qrqBYPc5IHTZUywIDAQAB",
+   "manifest_version": 2,
+   "name": "Breakup",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "contextMenus", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.11"
+}
